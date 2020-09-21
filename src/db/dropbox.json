@@ -2,8 +2,8 @@
     "dropbox": [
       {
         "id": "12345",
-        "path": "/taxes/2016/w2-acme.pdf",
         "title": "\"2016 W2\"",
+        "path": "/taxes/2016/w2-acme.pdf",
         "shared_with": [
           "jane@accountants.com",
           "spouse@family.org"
@@ -17,8 +17,8 @@
       },
       {
         "id": "34567",
-        "path": "/work/customers/acme/invoice.docx",
         "title": "\"ACME Corp: Invoice\"",
+        "path": "/work/customers/acme/invoice.docx",
         "shared_with": [
           "acme-accounts@mycompany.com"
         ],
@@ -30,8 +30,8 @@
       },
       {
         "id": "56789",
-        "path": "/purchases/2016/fridge.pdf",
         "title": "\"Best Buy: Invoice\"",
+        "path": "/purchases/2016/fridge.pdf",
         "matching_terms": [
           "invoice"
         ],
@@ -39,8 +39,8 @@
       },
       {
         "id": "3456789",
-        "path": "/work/customers/acme/proposal.docx",
         "title": "\"ACME Corp: Draft MoU\"",
+        "path": "/work/customers/acme/proposal.docx",
         "shared_with": [
           "acme-accounts@mycompany.com"
         ],
@@ -53,8 +53,8 @@
       },
       {
         "id": "3556789",
-        "path": "/work/customers/acme/meeting-notes.docx",
         "title": "\"ACME Corp: Meeting Notes\"",
+        "path": "/work/customers/acme/meeting-notes.docx",
         "shared_with": [
           "acme-accounts@mycompany.com"
         ],

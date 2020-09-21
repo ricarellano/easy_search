@@ -33,6 +33,7 @@ export const getData = (search, type = "all") => {
 
   if (type === "slack" || type === "all") {
     filtered.slack = Slack.slack.filter((data) => {
+      data.channel = '#' + data.channel;
       data.timestamp = relativeDate(data.timestamp);
       return data.matching_terms.includes(search);
     });

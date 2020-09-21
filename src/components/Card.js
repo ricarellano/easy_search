@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import CardInfo from "../components/CardInfo";
 
 const Card = (props) => {
   const { filtered } = props.filtered;
@@ -9,6 +10,7 @@ const Card = (props) => {
       filter = (
         <div key={i} className="card">
           <h2>{source}</h2>
+          <CardInfo info={filtered[source]} source={source} />
         </div>
       );
     }

@@ -10,7 +10,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #F4F4F4;
+  background-color: #FFFFFF;
   color: #333;
 }
 
@@ -29,20 +29,31 @@ header {
   margin: 0 auto;
 }
 
+
 .searchInput {
   flex: 1;
   height: 40px;
   padding: 5px 10px;
+  border-radius: 6px;
 }
 
 .searchBtn {
   padding: 5px 10px;
 }
 
+.cardContainer {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 40px;
+  color: #43484D;
+
+}
+
 .card {
   background: #F4F4F4;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
-  width: 330px;
+  width: 420px;
   padding: 18px;
   height: calc(100vh - 350px);
   border: 1px solid #EDEDED;
@@ -57,4 +68,25 @@ header {
 
 .card h2 {
   text-transform: capitalize;;
+}
+
+.card ul {
+  list-style: none;
+  background-color: #FFFFFF;
+  border-radius: 1em;
+  border: 1px solid grey;
+  margin: 12px 0;
+  padding: 10px;
+
+}
+
+.card li:nth-child(2) {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.infoLabel {
+  text-transform: capitalize;;
+  font-weight: bold;
+  color: #0090B6;
 }
