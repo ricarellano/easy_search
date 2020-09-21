@@ -1,10 +1,14 @@
 import React from 'react';
 import './App.css';
+import SearchBar from './components/SearchBar';
+
 
 function App() {
   return (
     <>
-      <header></header>
+      <header>
+        <SearchBar/>
+      </header>
     </>
   );
 }

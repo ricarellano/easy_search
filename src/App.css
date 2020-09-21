@@ -21,3 +21,20 @@ header {
   align-items: center;
 
 }
+
+.searchForm {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.searchInput {
+  flex: 1;
+  height: 40px;
+  padding: 5px 10px;
+}
+
+.searchBtn {
+  padding: 5px 10px;
+}
