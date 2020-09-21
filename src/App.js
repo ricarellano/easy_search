@@ -1,14 +1,14 @@
-import React from 'react';
-import './App.css';
-import SearchBar from './components/SearchBar';
-
+import React from "react";
+import "./App.css";
+import SearchBar from "./components/SearchBar";
 
 function App() {
   return (
     <>
-      <header>
-        <SearchBar/>
-      </header>
+      <header></header>
+      <main>
+        <SearchBar />
+      </main>
     </>
   );
 }

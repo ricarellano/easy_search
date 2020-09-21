@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
-import {getData} from "../actions/ActionSearch";
+import { getData } from "../actions/ActionSearch";
+import Card from './Card';
 
 const SearchBar = () => {
   const [search, setSearch] = useState("");
   const [filtered, setFiltered] = useState(null);
-  console.log(filtered)
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFiltered(getData(search)); 
+    setFiltered(getData(search));
   };
 
   const handleChange = (e) => {
@@ -27,6 +27,9 @@ const SearchBar = () => {
         />
         <input className="searchBtn" type="submit" value="Search" />
       </form>
+      <div className="cardContainer">
+        {filtered != null && <Card filtered={filtered} />}
+      </div>
     </>
   );
 };
