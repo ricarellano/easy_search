@@ -7,6 +7,7 @@ function App() {
     <>
       <header>
         <h1>Easy Search</h1>
+        <p>Everything you want to know in one place</p>
       </header>
       <main>
         <SearchBar />

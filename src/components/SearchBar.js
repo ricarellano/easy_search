@@ -29,11 +29,7 @@ const SearchBar = () => {
         <input className="searchBtn" type="submit" value="Search" />
       </form>
       <div className="cardContainer">
-        {filtered !== null ? (
-          <Card filtered={filtered} />
-        ) : (
-          <h4>Everything you want to know in one place.</h4>
-        )}
+        {filtered !== null && <Card filtered={filtered} />}
       </div>
     </>
   );
