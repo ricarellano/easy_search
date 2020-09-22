@@ -6,10 +6,18 @@ const SearchBar = () => {
   const [search, setSearch] = useState("");
   const [filtered, setFiltered] = useState(null);
 
+  useEffect(() => {
+},[search])
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setFiltered(getData(search));
+
   };
+
+  const handleData = (newData) => {
+    setFiltered(newData)
+  }
 
   const handleChange = (e) => {
     setSearch(e.target.value);
