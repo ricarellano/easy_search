@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from "react";
+import React, { Fragment, useState } from "react";
 
 const CardInfo = (props) => {
   const [info, SetInfo] = useState({
@@ -13,14 +13,14 @@ const CardInfo = (props) => {
   const content = (data) => {
     let res = Object.keys(data).map((key, i) => (
       <li key={i}>
-        <span className="infoLabel">{key === "invitees" && key}</span>{" "}
-        <span className="infoLabel">{key === "company" && key}</span>{" "}
-        <span className="infoLabel">{key === "emails" && key}</span>{" "}
-        <span className="infoLabel">{key === "phones" && key}</span>{" "}
-        <span className="infoLabel">{key === "path" && "Document"}</span>{" "}
-        <span className="infoLabel">{key === "shared_with" && "Shared"}</span>{" "}
-        <span className="infoLabel">{key === "created" && key}</span>{" "}
-        <span className="infoLabel">{key === "author" && key}</span>{" "}
+        <span className="infoLabel">{key === "invitees" && `${key}:`}</span>{" "}
+        <span className="infoLabel">{key === "company" && `${key}:`}</span>{" "}
+        <span className="infoLabel">{key === "emails" && `${key}:`}</span>{" "}
+        <span className="infoLabel">{key === "phones" && `${key}:`}</span>{" "}
+        <span className="infoLabel">{key === "path" && "Document:"}</span>{" "}
+        <span className="infoLabel">{key === "shared_with" && "Shared:"}</span>{" "}
+        <span className="infoLabel">{key === "created" && `${key}:`}</span>{" "}
+        <span className="infoLabel">{key === "author" && `${key}:`}</span>{" "}
         {key !== "id" && key !== "matching_terms" && data[key]}
       </li>
     ));
@@ -32,8 +32,8 @@ const CardInfo = (props) => {
       <ul key={inx}>
         <div className="cardTrash">
           <a
-            href="#"
-            style={{ color: "red" }}
+            href="#0"
+            style={{ color: "black" }}
             className="fa fa-trash"
             onClick={() => handleRemove(info.id)}
           ></a>

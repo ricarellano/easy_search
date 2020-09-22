@@ -1,23 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { getData } from "../actions/ActionSearch";
-import Card from './Card';
+import Card from "./Card";
 
 const SearchBar = () => {
   const [search, setSearch] = useState("");
   const [filtered, setFiltered] = useState(null);
 
-  useEffect(() => {
-},[search])
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setFiltered(getData(search));
-
   };
-
-  const handleData = (newData) => {
-    setFiltered(newData)
-  }
 
   const handleChange = (e) => {
     setSearch(e.target.value);
@@ -28,6 +20,7 @@ const SearchBar = () => {
       <form className="searchForm" onSubmit={handleSubmit}>
         <input
           className="searchInput"
+          placeholder=""
           type="text"
           name="search"
           value={search}
@@ -36,7 +29,11 @@ const SearchBar = () => {
         <input className="searchBtn" type="submit" value="Search" />
       </form>
       <div className="cardContainer">
-        {filtered != null && <Card filtered={filtered} />}
+        {filtered !== null ? (
+          <Card filtered={filtered} />
+        ) : (
+          <h4>Everything you want to know in one place.</h4>
+        )}
       </div>
     </>
   );

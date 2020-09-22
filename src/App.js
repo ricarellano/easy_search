@@ -5,7 +5,9 @@ import SearchBar from "./components/SearchBar";
 function App() {
   return (
     <>
-      <header></header>
+      <header>
+        <h1>Easy Search</h1>
+      </header>
       <main>
         <SearchBar />
       </main>
